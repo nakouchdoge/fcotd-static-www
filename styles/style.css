@@ -82,6 +82,14 @@ a:link {
 	color: white;
 }
 
+a.class1:visited {
+	color: rgb(17, 119, 236)
+}
+
+a.class1:link {
+	color: rgb(17, 119, 236)
+}
+
 li a:hover {
 	color: #ac53ff;
 }
