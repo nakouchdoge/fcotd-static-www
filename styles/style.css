@@ -82,11 +82,19 @@ a:link {
 	color: white;
 }
 
+a.class1 {
+	color: rgb(17, 119, 236)
+}
+
 a.class1:visited {
 	color: rgb(17, 119, 236)
 }
 
 a.class1:link {
+	color: rgb(17, 119, 236)
+}
+
+a.class1:active {
 	color: rgb(17, 119, 236)
 }
 
