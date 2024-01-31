@@ -87,6 +87,26 @@ a.class1 {
 	text-decoration: underline;
 }
 
+a.class1:link {
+	color: rgb(17, 119, 236);
+	text-decoration: underline;
+}
+
+a.class1:visited {
+	color: rgb(17, 119, 236);
+	text-decoration: underline;
+}
+
+a.class1:active {
+	color: rgb(17, 119, 236);
+	text-decoration: underline;
+}
+
+a.class1:hover {
+	color: rgb(17, 119, 236);
+	text-decoration: underline;
+}
+
 li a:hover {
 	color: #ac53ff;
 }
