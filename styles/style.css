@@ -2,7 +2,7 @@
 
 body {
 	color: #000000;
-	background-color: #c4c4c4;
+	background-color: #4c545f;
 	font-family: 'Nunito', system-ui, sans-serif;
 	overflow-y: scroll;
 	padding: 0;
@@ -92,7 +92,7 @@ li a:hover {
 }
 
 .sec1 {
-	background-color:#ffffff;
+	background-color:#e7e7e7;
 	padding-top: 1rem;
 	padding-bottom: 3rem;
 	padding-left: 0rem;
