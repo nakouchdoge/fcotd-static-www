@@ -41,6 +41,59 @@ ul {
 	overflow: hidden;
 }
 
+button {
+	border: none;
+	background: none;
+	margin-right: 2rem;
+	vertical-align: middle;
+	float: right;
+	padding: .25rem;
+}
+
+.buttonimg {
+	max-width: 2rem;
+	display: block;
+}
+
+.darkmode header {
+	background-color: #283142;
+	color: #dcdfe4ce;
+}
+
+.darkmode {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
+.darkmode div {
+	background-color: #282c34;
+	color: #dcdfe4ce;
+}
+
+.darkmode nav {
+	background-color: #334569;
+	color: #dcdfe4ce;
+}
+
+.darkmode a:link {
+	color: #dcdfe4ce;
+}
+
+.darkmode a:visited {
+	color: #dcdfe4ce;
+}
+
+.darkmode footer {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
+
+.darkmode img {
+	width: 100%;
+	opacity: .6;
+}
+
 .navul {
 	padding: 0;
 	margin-top: 0;
