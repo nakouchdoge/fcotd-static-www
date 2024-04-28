@@ -55,41 +55,41 @@ button {
 	display: block;
 }
 
-.darkmode header {
+.dark-mode header {
 	background-color: #283142;
 	color: #dcdfe4ce;
 }
 
-.darkmode {
+.dark-mode {
 	background-color: #15161a;
 	color: #dcdfe4ce;
 }
 
-.darkmode div {
+.dark-mode div {
 	background-color: #282c34;
 	color: #dcdfe4ce;
 }
 
-.darkmode nav {
+.dark-mode nav {
 	background-color: #334569;
 	color: #dcdfe4ce;
 }
 
-.darkmode a:link {
+.dark-mode a:link {
 	color: #dcdfe4ce;
 }
 
-.darkmode a:visited {
+.dark-mode a:visited {
 	color: #dcdfe4ce;
 }
 
-.darkmode footer {
+.dark-mode footer {
 	background-color: #15161a;
 	color: #dcdfe4ce;
 }
 
 
-.darkmode img {
+.dark-mode img {
 	width: 100%;
 	opacity: .6;
 }
@@ -352,6 +352,15 @@ iPads, other Tablets in portrait
 		font-size: 2.5rem;
 	}
 
+	button {
+		border: none;
+		background: none;
+		margin-right: 2rem;
+		vertical-align: middle;
+		float: right;
+		padding: .5rem;
+	}
+
 	nav {
 		padding-top: 0rem;
 		padding-right: 0;
@@ -503,6 +512,20 @@ Mobile devices in portait
 		font-size: 3rem;
 	}
 
+	button {
+		border: none;
+		text-align: center;
+		background: none;
+		position: fixed;
+		right:0;
+		bottom:2rem;
+	}
+
+	.buttonimg {
+		max-width: 3rem;
+		display: block;
+	}
+	
 	.mainheader {
 		margin-top: 0;
 		margin-right: 0;
