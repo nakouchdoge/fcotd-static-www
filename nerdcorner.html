@@ -19,6 +19,14 @@
 </head>
 	<title>FCOTD - Nerd Corner</title>
 	<body>
+		<script>
+			localStorage.setItem('darkMode', 'true');
+
+			var darkMode = localStorage.getItem('darkMode');
+			if (darkMode === 'true') {
+				document.body.classList.add('darkmode');
+			}
+		</script>
 		<header>
 			<p class="mainheader">
 				<a class="mainheader" href="index.html">

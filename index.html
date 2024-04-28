@@ -19,6 +19,14 @@
 </head>
 	<title>First Cup of the Day</title>
 	<body>
+		<script>
+			localStorage.setItem('darkMode', 'true');
+
+			var darkMode = localStorage.getItem('darkMode');
+			if (darkMode === 'true') {
+				document.body.classList.add('darkmode');
+			}
+		</script>
 		<header>
 			<p class="mainheader">
 				<a class="mainheader" href="index.html">
@@ -36,7 +44,7 @@
 				<li><a href="nerdcorner.html">Nerd Corner</a></li>
 				<li><a href="shareholders.html">Shareholders</a></li>
 				<li><a href="archive.html">Archive</a></li>
-				<button onclick="darkMode()"">
+				<button onclick="darkModeToggle()"">
 					<img class="buttonimg" src="images/moon.png">
 				</button>
 			</ul>
