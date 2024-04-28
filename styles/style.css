@@ -19,13 +19,13 @@ header {
 	max-width: 75rem;
 	text-align: center;
 	position: relative;
-	box-shadow: 0px .25rem .25rem #212121,
+	box-shadow: 0px 0rem .1rem #212121,
 	inset 0 0 0.1rem black;
 	font-family: 'Rubik', sans-serif;
 }
 
 nav {
-	background-color:#3E88A8;
+	background-color:#b35c00;
 	margin: 0 auto;
 	max-width: 75rem;
 	padding: 0;
@@ -88,17 +88,18 @@ a.class1 {
 }
 
 li a:hover {
-	color: #ac53ff;
+	color: rgb(17, 119, 236);
 }
 
 .sec1 {
 	background-color:#e7e7e7;
-	padding-top: 1rem;
-	padding-bottom: 3rem;
+	padding-top: .75rem;
+	padding-bottom: 2.5rem;
 	padding-left: 0rem;
 	padding-right: 0rem;
 	font-size: 1rem;
-	box-shadow: 0px 3px 3px #212121, inset 0 0 1px black;
+	box-shadow: 0px .25rem .25rem #212121,
+	inset 0 0 0.1rem black;
 	margin: 0 auto;
 	max-width: 75rem;
 }
@@ -119,6 +120,19 @@ img {
 	display: none;
 }
 
+.datestamp {
+	padding-top: 0;
+	padding-right: 1rem;
+	padding-bottom: 0;
+	padding-left: 1rem;
+	margin-top: 0.25rem;
+	margin-right: 2rem;
+	margin-bottom: 0.25rem;
+	margin-left: 2rem;
+	font-style: italic;
+	font-size: 1.25rem;
+}
+
 h1 {
 	font-size: 2.5rem;
 	padding-top: 0;
@@ -133,7 +147,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.75rem;
+	font-size: 2rem;
 	padding-top: 0;
 	padding-right: 1rem;
 	padding-bottom: 0;
@@ -159,13 +173,13 @@ h3 {
 }
 
 p {
-	padding-top: 0;
+	padding-top: .5rem;
 	padding-right: 1rem;
-	padding-bottom: 0;
+	padding-bottom: .5rem;
 	padding-left: 1rem;
 	margin-top: 0rem;
 	margin-right: 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 	margin-left: 2rem;
 	line-height: 1.75rem;
 	font-size: 1.5rem;
