@@ -35,7 +35,7 @@
 				<li><a href="nerdcorner.html">Nerd Corner</a></li>
 				<li><a href="shareholders.html">Shareholders</a></li>
 				<li><a href="archive.html">Archive</a></li>
-				<button onclick="darkModeToggle()">
+				<button id="darkModeToggler">
 					<img class="buttonimg" src="images/moon.png">
 				</button>
 			</ul>
@@ -110,8 +110,8 @@
 			});
 	
 			// Event listener for the dark mode toggle button
-			document.getElementById('darkModeToggle').addEventListener('click', function() {
-				toggleDarkMode();
+			document.getElementById('darkModeToggler').addEventListener('click', function() {
+				darkModeToggle();
 			});
 		</script>
 	</body>
