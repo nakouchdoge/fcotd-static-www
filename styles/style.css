@@ -55,6 +55,11 @@ button {
 	display: block;
 }
 
+.dark-mode {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
 .dark-mode header {
 	background-color: #283142;
 	color: #dcdfe4ce;
