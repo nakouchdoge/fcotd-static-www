@@ -17,7 +17,7 @@
 	</style>
 	<script>
 		// Apply dark mode preference on page load
-		window.addEventListener('load', function() {
+		window.addEventListener('DOMContentLoaded', function checkDarkMode() {
 			// Retrieve mode preference from local storage
 			var darkMode = localStorage.getItem('darkMode');
 	
