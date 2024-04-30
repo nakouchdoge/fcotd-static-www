@@ -19,10 +19,10 @@
 		// Apply dark mode preference on page load
 		window.addEventListener('DOMContentLoaded', function checkDarkMode() {
 			// Retrieve mode preference from local storage
-			var darkMode = localStorage.getItem('darkMode');
+			var darkModeEnabled = localStorage.getItem('darkMode', darkModeEnabled);
 	
 			// Apply dark mode if preference is set to true
-			if (darkMode === 'true') {
+			if (darkModeEnabled === 'true') {
 				// Apply dark mode styles
 				document.body.classList.add('dark-mode');
 			}
