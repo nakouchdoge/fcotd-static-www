@@ -42,17 +42,23 @@
 	
 				// Set checkbox state
 				darkModeToggler.checked = isChecked;
-				}
+			}
 
 			const darkModeToggler = document.getElementById('darkModeToggler');
 			const darkMode = localStorage.getItem('darkMode');
-			// Apply dark mode if preference is set to true
-			if (darkMode === 'true') {
-				// Apply dark mode styles
+
+			if (screen.width >= 501 && darkMode === 'true') {
 				document.body.classList.add('dark-mode');
 			}
-			if (isDarkMode()) {
-				// Apply dark mode styles
+/* 			// Apply dark mode if preference is set to true
+			if (darkMode === 'true' && isDarkmode()) {
+			// Apply dark mode styles
+				document.body.classList.add('dark-mode');
+			} else if (darkmode === 'false' && isDarkmode()) {
+				document.body.classList.add('dark-mode');
+			}
+ */
+			if (screen.width <= 500 && isDarkMode()) {
 				document.body.classList.add('dark-mode');
 			}
 		</script>
@@ -80,10 +86,10 @@
 		<div class="sec1" class="darkmode">
 			<br class="mobileindent">
 			<h1>
-				How does this shit work?
+				How does this stuff work?
 			</h1>
             <p>
-                Squarespace, Wordpress? Fuck that. This website is completely made by my hands on this keyboard.
+                Squarespace, Wordpress? F that. This website was made and stays maintained from my hands and this keyboard.
             </p>
 			<p class="ctrimage">
 				<img style="max-width: 40rem" src="images/keyboard.JPG">
@@ -101,7 +107,7 @@
                 <img style="max-width: 30rem" src="images/rack.JPG">
             </p>
             <p>
-                Just some e-waste racked in this cabinet. Lotta cables and blinky lights, too. Once we have all the hardware running, we attach a penguin to make the computers tick and we're done!
+                Just some e-waste racked in this cabinet. Lotta cables and blinky lights, too. Once we have all the hardware running, we attach a penguin to make the computers tick and voila!
             </p>
 			<p class="ctrimage">
                 <img style="max-width: 30rem" src="images/ripper.JPG">
@@ -117,7 +123,7 @@
             </p>
 			<br>
             <p>
-                Thanks NS for helping me get started years ago. Man, I love that penguin.
+                Thanks NS for helping me get started years ago. Also--man, I love that penguin.
             </p>
 		</div>
 		<footer class="footer">

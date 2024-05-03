@@ -42,17 +42,23 @@
 	
 				// Set checkbox state
 				darkModeToggler.checked = isChecked;
-				}
+			}
 
 			const darkModeToggler = document.getElementById('darkModeToggler');
 			const darkMode = localStorage.getItem('darkMode');
-			// Apply dark mode if preference is set to true
-			if (darkMode === 'true') {
-				// Apply dark mode styles
+
+			if (screen.width >= 501 && darkMode === 'true') {
 				document.body.classList.add('dark-mode');
 			}
-			if (isDarkMode()) {
-				// Apply dark mode styles
+/* 			// Apply dark mode if preference is set to true
+			if (darkMode === 'true' && isDarkmode()) {
+			// Apply dark mode styles
+				document.body.classList.add('dark-mode');
+			} else if (darkmode === 'false' && isDarkmode()) {
+				document.body.classList.add('dark-mode');
+			}
+ */
+			if (screen.width <= 500 && isDarkMode()) {
 				document.body.classList.add('dark-mode');
 			}
 		</script>
