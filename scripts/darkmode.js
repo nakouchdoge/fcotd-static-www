@@ -11,5 +11,3 @@ function darkModeToggle() {
 document.getElementById('darkModeToggler').addEventListener('click', function() {
     darkModeToggle();
 });
-
-setCheckboxState();
