@@ -1,5 +1,61 @@
 /*Stylesheet for fcotd.com*/
 
+.dark-mode body {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
+.dark-mode {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
+.dark-mode header {
+	background-color: #283142;
+	color: #dcdfe4ce;
+}
+
+.dark-mode div {
+	background-color: #282c34;
+	color: #dcdfe4ce;
+}
+
+.dark-mode nav {
+	background-color: #334569;
+	color: #dcdfe4ce;
+}
+
+.dark-mode a:link {
+	color: #dcdfe4ce;
+}
+
+.dark-mode a:visited {
+	color: #dcdfe4ce;
+}
+
+.dark-mode footer {
+	background-color: #15161a;
+	color: #dcdfe4ce;
+}
+
+.dark-mode img {
+	width: 100%;
+	opacity: .6;
+}
+
+.dark-mode li a:hover {
+	color: rgb(17, 119, 236);
+}
+
+.dark-mode .mainheader:hover {
+	color: rgb(17, 119, 236);
+}
+
+.buttonimg {
+	max-width: 2rem;
+	display: block;
+}
+
 body {
 	color: #000000;
 	background-color: #4c545f;
@@ -48,54 +104,6 @@ button {
 	vertical-align: middle;
 	float: right;
 	padding: .25rem;
-}
-
-.buttonimg {
-	max-width: 2rem;
-	display: block;
-}
-
-.dark-mode {
-	background-color: #15161a;
-	color: #dcdfe4ce;
-}
-
-.dark-mode header {
-	background-color: #283142;
-	color: #dcdfe4ce;
-}
-
-.dark-mode body {
-	background-color: #15161a;
-	color: #dcdfe4ce;
-}
-
-.dark-mode div {
-	background-color: #282c34;
-	color: #dcdfe4ce;
-}
-
-.dark-mode nav {
-	background-color: #334569;
-	color: #dcdfe4ce;
-}
-
-.dark-mode a:link {
-	color: #dcdfe4ce;
-}
-
-.dark-mode a:visited {
-	color: #dcdfe4ce;
-}
-
-.dark-mode footer {
-	background-color: #15161a;
-	color: #dcdfe4ce;
-}
-
-.dark-mode img {
-	width: 100%;
-	opacity: .6;
 }
 
 .navul {
