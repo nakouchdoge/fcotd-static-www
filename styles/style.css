@@ -51,6 +51,11 @@
 	color: rgb(17, 119, 236);
 }
 
+.dark-mode hr {
+	border: 1px solid;
+	color:rgba(197, 197, 197, 0.105)
+}
+
 .dark-mode-toggle {
     position: relative;
 	vertical-align: middle;
@@ -63,19 +68,19 @@
     border-radius: 50px;
 	padding: 0.25rem;
     cursor: pointer;
-    transition: background-color 0.1s ease;
+    transition: background-color 0.5s ease;
 }
 
 .dark-mode-toggle::before {
     content: '';
     position: absolute;
     top: .26rem;
-    left: .3rem;
+    left: .35rem;
     width: 1.5rem;
     height: 1.5rem;
     background-color: #333333;
     border-radius: 50%;
-    transition: transform 0.1s ease;
+    transition: transform 0.5s ease;
  }
 
 input[type="checkbox"] {
@@ -130,15 +135,6 @@ ul {
 	margin: 0;
 	list-style-type: none;
 	overflow: hidden;
-}
-
-button {
-	border: none;
-	background: none;
-	margin-right: 2rem;
-	vertical-align: middle;
-	float: right;
-	padding: .25rem;
 }
 
 .navul {
@@ -351,6 +347,10 @@ footer {
 	width: 100%;
 }
 
+.mobileonly {
+	display: none;
+}
+
 /*Responsive Shit*/
 
 @media screen and (max-width: 1500px) {
@@ -382,19 +382,19 @@ iPads, other Tablets in portrait
 		border-radius: 50px;
 		padding: 0.25rem;
 		cursor: pointer;
-		transition: background-color 0.1s ease;
+		transition: background-color 0.5s ease;
 	}
 	
 	.dark-mode-toggle::before {
 		content: '';
 		position: absolute;
 		top: .26rem;
-		left: .3rem;
+		left: .35rem;
 		width: 1.5rem;
 		height: 1.5rem;
 		background-color: #333333;
 		border-radius: 50%;
-		transition: transform 0.1s ease;
+		transition: transform 0.5s ease;
 	 }
 	
 	input[type="checkbox"] {
@@ -437,15 +437,6 @@ iPads, other Tablets in portrait
 		margin-bottom: .5rem;
 		margin-left: 0;
 		font-size: 2.5rem;
-	}
-
-	button {
-		border: none;
-		background: none;
-		margin-right: 2rem;
-		vertical-align: middle;
-		float: right;
-		padding: .5rem;
 	}
 
 	nav {
@@ -506,7 +497,7 @@ iPads, other Tablets in portrait
 		font-size: 2.5rem;
 		padding-top: 1rem;
 		padding-right: 1rem;
-		padding-bottom: 0rem;
+		padding-bottom: 1rem;
 		padding-left: 1rem;
 		margin-top: 0rem;
 		margin-right: 2rem;
@@ -517,7 +508,7 @@ iPads, other Tablets in portrait
 	
 	h2 {
 		font-size: 2rem;
-		padding-top: 0;
+		padding-top: 0.5rem;
 		padding-right: 1rem;
 		padding-bottom: 1rem;
 		padding-left: 1rem;
@@ -543,15 +534,15 @@ iPads, other Tablets in portrait
 	
 
 	p {
-		padding-top: .25rem;
+		padding-top: 0rem;
 		padding-right: 1rem;
 		padding-bottom: 0rem;
 		padding-left: 1rem;
-		margin-top: 0rem;
+		margin-top: .75rem;
 		margin-right: 2rem;
-		margin-bottom: 1.75rem;
+		margin-bottom: .75rem;
 		margin-left: 2rem;
-		line-height: 1.75rem;
+		line-height: 2rem;
 		font-size: 1.75rem;
 	}
 	
@@ -620,15 +611,6 @@ Mobile devices in portait
 		font-size: 3rem;
 	}
 
-	button {
-		border: none;
-		text-align: center;
-		background: none;
-		position: fixed;
-		right:1rem;
-		bottom:2rem;
-	}
-
 	.mainheader {
 		margin-top: 0;
 		margin-right: 0;
@@ -695,7 +677,7 @@ Mobile devices in portait
 		padding-right: 1rem;
 		padding-bottom: 0rem;
 		padding-left: 1rem;
-		margin-top: 0.25rem;
+		margin-top: 0.5rem;
 		margin-right: 2rem;
 		margin-bottom: 0.5rem;
 		margin-left: 2rem;
@@ -706,11 +688,11 @@ Mobile devices in portait
 		font-size: 3.5rem;
 		padding-top: 0;
 		padding-right: 1rem;
-		padding-bottom: 1rem;
+		padding-bottom: 0rem;
 		padding-left: 1rem;
-		margin-top: 0.25rem;
+		margin-top: 1rem;
 		margin-right: 2rem;
-		margin-bottom: 0.25rem;
+		margin-bottom: 1rem;
 		margin-left: 2rem;
 		line-height: 3rem;
 	}
@@ -730,15 +712,15 @@ Mobile devices in portait
 	
 
 	p {
-		padding-top: 0.25rem;
+		padding-top: 0rem;
 		padding-right: 1rem;
 		padding-bottom: 0;
 		padding-left: 1rem;
-		margin-top: 0rem;
+		margin-top: 1rem;
 		margin-right: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		margin-left: 2rem;
-		line-height: 3rem;
+		line-height: 3.5rem;
 		font-size: 3rem;
 	}
 	
@@ -765,6 +747,16 @@ Mobile devices in portait
 
 	.mobileindent {
 		display: block;
+	}
+
+	.rmmobile {
+		display: none;
+	}
+
+	.mobileonly {
+		display: block;
+		content: "";
+		margin-top: 3rem;
 	}
 }
 
