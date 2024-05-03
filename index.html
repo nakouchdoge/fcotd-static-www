@@ -31,6 +31,9 @@
 	<title>FCOTD - First Cups</title>
 	<body>
 		<script>
+			function isDarkMode() {
+				return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			}
 			function setCheckboxState() {
 				const darkModeToggler = document.getElementById('darkModeToggler');
 		
@@ -40,10 +43,15 @@
 				// Set checkbox state
 				darkModeToggler.checked = isChecked;
 				}
+
 			const darkModeToggler = document.getElementById('darkModeToggler');
 			const darkMode = localStorage.getItem('darkMode');
 			// Apply dark mode if preference is set to true
 			if (darkMode === 'true') {
+				// Apply dark mode styles
+				document.body.classList.add('dark-mode');
+			}
+			if (isDarkMode()) {
 				// Apply dark mode styles
 				document.body.classList.add('dark-mode');
 			}

@@ -370,6 +370,7 @@ iPads, other Tablets in portrait
 */
 
 @media (max-device-width: 1024px) {
+	
 	.sec1, nav, header {
 		margin-top: 0;
 		margin-right: 0;
@@ -589,11 +590,6 @@ Mobile devices in portait
 		bottom:2rem;
 	}
 
-	.buttonimg {
-		max-width: 10rem;
-		display: block;
-	}
-	
 	.mainheader {
 		margin-top: 0;
 		margin-right: 0;
