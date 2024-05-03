@@ -4,7 +4,6 @@
 	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="icon" type="image/x-icon" href="images/fcotdflav.png">
 	<meta charset="UTF-8">
-
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@300&display=swap');
@@ -27,18 +26,26 @@
 		li a {
 			transition: color 0.3s;
 		}
-		
 	</style>
 </head>
 	<title>FCOTD - First Cups</title>
 	<body>
 		<script>
-			const darkMode = localStorage.getItem('darkMode');
+			function setCheckboxState() {
+				const darkModeToggler = document.getElementById('darkModeToggler');
+		
+				// Retrieve value from local storage
+				const isChecked = localStorage.getItem('darkMode') === 'true';
 	
+				// Set checkbox state
+				darkModeToggler.checked = isChecked;
+				}
+			const darkModeToggler = document.getElementById('darkModeToggler');
+			const darkMode = localStorage.getItem('darkMode');
 			// Apply dark mode if preference is set to true
 			if (darkMode === 'true') {
 				// Apply dark mode styles
-				document.body.classList.add("dark-mode");
+				document.body.classList.add('dark-mode');
 			}
 		</script>
 		<header>
@@ -58,9 +65,8 @@
 				<li><a href="nerdcorner.html">Nerd Corner</a></li>
 				<li><a href="shareholders.html">Shareholders</a></li>
 				<li><a href="archive.html">Archive</a></li>
-				<button id="darkModeToggler">
-					<img class="buttonimg" src="images/moon.png">
-				</button>
+				<input type="checkbox" id="darkModeToggler" name="theme">
+				<label class="dark-mode-toggle" for="darkModeToggler"></label>
 			</ul>
 		</nav>
 		<div class="sec1" class="darkmode">
