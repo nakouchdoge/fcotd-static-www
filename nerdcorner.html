@@ -34,7 +34,7 @@
 			function isDarkMode() {
 				return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 			}
-			function setCheckboxState() {
+/* 			function setCheckboxState() {
 				const darkModeToggler = document.getElementById('darkModeToggler');
 		
 				// Retrieve value from local storage
@@ -42,15 +42,15 @@
 	
 				// Set checkbox state
 				darkModeToggler.checked = isChecked;
-			}
-
+			} */
 			const darkModeToggler = document.getElementById('darkModeToggler');
 			const darkMode = localStorage.getItem('darkMode');
 
 			if (screen.width >= 501 && darkMode === 'true') {
 				document.body.classList.add('dark-mode');
 			}
-/* 			// Apply dark mode if preference is set to true
+/* 			
+			// Apply dark mode if preference is set to true
 			if (darkMode === 'true' && isDarkmode()) {
 			// Apply dark mode styles
 				document.body.classList.add('dark-mode');
@@ -82,6 +82,12 @@
 				<input type="checkbox" id="darkModeToggler" name="theme">
 				<label class="dark-mode-toggle" for="darkModeToggler"></label>
 			</ul>
+			<script>
+				if (localStorage.getItem('darkMode') === 'true') {
+					const darkSwitcher = document.getElementById('darkModeToggler');
+					darkSwitcher.checked = true;
+				}
+			</script>
 		</nav>
 		<div class="sec1" class="darkmode">
 			<br class="mobileindent">
