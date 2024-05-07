@@ -353,7 +353,7 @@ footer {
 
 /*Responsive Shit*/
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
 	.sec1, nav, header{
 		margin: 0rem 5% 0rem 5%;
 	}
@@ -362,6 +362,10 @@ footer {
 @media screen and (max-width: 1000px) {
 	.sec1, nav, header{
 		margin: 0rem 10% 0rem 10%;
+	}
+	.mainheader, .headersubtext {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 
