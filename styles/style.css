@@ -185,6 +185,10 @@ li a:hover {
 	color: rgb(17, 119, 236);
 }
 
+li a.active {
+	text-decoration: underline;
+}
+
 .sec1 {
 	background-color:#e7e7e7;
 	padding-top: .75rem;
