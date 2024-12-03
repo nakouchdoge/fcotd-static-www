@@ -97,7 +97,7 @@ input[type="checkbox"]:checked + .dark-mode-toggle::before {
 
 body {
 	color: #000000;
-	background-color: #4c545f;
+	background-color: #3c4249;
 	font-family: 'Nunito', system-ui, sans-serif;
 	overflow-y: scroll;
 	padding: 0;
@@ -120,7 +120,7 @@ header {
 }
 
 nav {
-	background-color:#b35c00;
+	background-color:rgb(13, 76, 148);
 	margin: 0 auto;
 	max-width: 75rem;
 	padding: 0;
